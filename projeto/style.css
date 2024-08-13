@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:"Atkinson Hyperlegible", sans-serif;
+    
 }
 :root{
     --cor1:#1E1E1E;
@@ -15,6 +15,8 @@
     --cor9:#10A974;
     --cor10:#07263E;
     --cor11:#32A9FF;
+    --cor12: #EFEFEF;
+    --cor13:#021471;
 }
 
 body{
@@ -49,7 +51,14 @@ body{
     font-style: italic;
   }
 
-
+  /* <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 400 to 800 */
+.syne-{
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 
 li,a,button{
     font-size: 16px;
@@ -65,6 +74,21 @@ header{
     padding: 20px 15px;
     background-color: var(--cor10);
     text-shadow: var(--cor4);
+    font-family:"Atkinson Hyperlegible", sans-serif;
+}
+
+section {
+    font-family:"Syne", sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    background-image: url(../img/6893473.jpg);
+    text-align: center;
+    padding-top: 60px;
+    opacity:0.8;
+    -webkit-text-stroke-width: 0.18px; /* largura da borda */
+    -webkit-text-stroke-color:var(--cor12); /* cor da borda */
+    
 }
 
 .logotipo{
@@ -72,6 +96,7 @@ header{
     font-size: 25px;
     font-weight: bold;
     margin-right: auto ;
+    font-family:"Atkinson Hyperlegible", sans-serif;
 }
 svg{
     width: 20px;
@@ -87,30 +112,35 @@ svg{
     color: var(--cor11);
 }
 
-button{
+.button-header{
     padding:10px 20px;
     background-color: var(--cor9);
     color: var(--cor3);
     border: none;
-    border-radius: 60px;
+    border-radius: 40px;
     cursor: pointer;
     margin-left: 15px;
 }
 
-button:hover{
+button-header:hover{
     background-color: var(--cor5);
 }
 
+.button-conhecer{
+    background-color: var(--cor6);
+    color: var(--cor4);
+    padding:20px 80px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
 .titulo{
     -webkit-text-stroke-width :2px;
     -webkit-text-stroke-color: var(--cor3);
     font-size: 3em; 
     color: var(--cor1);
     text-align: center;
-}
-
-p{
-    color: var(--cor11);
 }
 
 .introducao{
@@ -131,6 +161,17 @@ p{
     color: var(--cor3);
     
     
+}
+
+#textinho-introducao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:var(--cor13);
+    text-align: center;
+    height: 90px;
+    padding-top: 30px;
+    font-family:"Atkinson Hyperlegible", sans-serif;
 }
 
 @media (max-width: 800px) {
