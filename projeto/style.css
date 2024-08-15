@@ -77,7 +77,7 @@ header{
     font-family:"Atkinson Hyperlegible", sans-serif;
 }
 
-section {
+/* section {
     font-family:"Syne", sans-serif;
     justify-content: center;
     align-items: center;
@@ -87,8 +87,13 @@ section {
     padding-top: 60px;
     opacity:0.8;
     -webkit-text-stroke-width: 0.18px; /* largura da borda */
-    -webkit-text-stroke-color:var(--cor12); /* cor da borda */
+    /* -webkit-text-stroke-color:var(--cor12); /* cor da borda */
     
+/* } */ 
+
+section{
+    position: relative; /* Garante que o conteúdo fique acima da imagem de fundo */
+    z-index: 1;
 }
 
 .logotipo{
@@ -129,20 +134,27 @@ buttonheader:hover{
 .button-conhecer{
     background-color: var(--cor6);
     color: var(--cor4);
-    padding:20px 80px;
+    padding:20px 80px ;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     margin-left: 15px;
+    
+
 }
 .titulo{
+    padding: 150px;
     -webkit-text-stroke-width :2px;
-    -webkit-text-stroke-color: var(--cor3);
+    -webkit-text-stroke-color: var(--cor12);
     font-size: 3em; 
-    color: var(--cor1);
+    color: var(--cor2);
     text-align: center;
 }
-
+h1{
+    -webkit-text-stroke-color: var(--cor12);
+    color: var(--cor2);
+    text-align: center;
+}
 .introducao{
     display: flex;
     justify-content: center;
@@ -161,6 +173,19 @@ buttonheader:hover{
     color: var(--cor3);
     
     
+}
+
+.fundo{
+    background-image: url(../img/6893473.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 100%; /* Faz a div ocupar 100% da altura da tela */
+    width: 100%; /* Faz a div ocupar 100% da largura da tela */
+    position: fixed; /* Mantém a imagem fixa no fundo */
+    top: 0;
+    left: 0;
+    opacity: 0.5; /* Ajusta a opacidade da imagem */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
 }
 
 #textinho-introducao{
