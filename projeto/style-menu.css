@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor1: #1E1E1E;
+    --cor2: #000000;
+    --cor3: #FBFFFD;
+    --cor4: #FFFFFF;
+    --cor5: #049368;
+    --cor6: #2241CC;
+    --cor7: #252A36;
+    --cor8: #DAD5D5;
+    --cor9: #10A974;
+    --cor10: #07263E;
+    --cor11: #32A9FF;
+    --cor12: #EFEFEF;
+    --cor13: #021471;
+}
+
+body{
+    background-color:var(--cor10);
+    color: var(--cor3);
+}
+
+h2{
+    font-family:"Atkinson Hyperlegible", sans-serif;
+    -webkit-text-stroke-width :0.5px;
+    -webkit-text-stroke-color: var(--cor6);
+}
+
+p{
+    font-family:"Inter", sans-serif;
+}
+
+form{
+    font-family: "Inter", sans-serif;
+}
