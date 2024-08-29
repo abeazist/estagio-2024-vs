@@ -19,13 +19,13 @@
     --cor13: #021471;
 }
 
-body {
+/* body {
     background-image: url('/wp-content/themes/projeto-gpsbqm/imagens/fundoindex.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Atkinson Hyperlegible", sans-serif;
-}
+} */
 
 header {
     display: flex;
@@ -137,6 +137,14 @@ section {
 
 .button-conhecer:hover {
     background-color: var(--cor5);
+}
+
+h1{
+    font-size: 3em;
+    color: black;
+    margin-bottom: 20px;
+    -webkit-text-stroke-width :1px;
+    -webkit-text-stroke-color: var(--cor12);
 }
 
 @media (max-width: 800px) {
