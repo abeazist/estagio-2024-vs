@@ -19,13 +19,7 @@
     --cor13: #021471;
 }
 
-/* body {
-    background-image: url('/wp-content/themes/projeto-gpsbqm/imagens/fundoindex.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Atkinson Hyperlegible", sans-serif;
-} */
+/*  */
 
 header {
     display: flex;
@@ -84,6 +78,7 @@ section {
     position: relative;
     text-align: center;
     padding-top: 180px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 .titulo {
