@@ -18,6 +18,7 @@
     --cor11: #32A9FF;
     --cor12: #EFEFEF;
     --cor13: #021471;
+    --amarelo-queimado: #C1B755;
 }
 
 body{
@@ -35,7 +36,7 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 95px;
     color:var(--cor12);
     font-size: xx-large;
     -webkit-text-stroke-width :1px;
@@ -44,19 +45,28 @@ h1{
 p{
     display: flex;
     justify-content: center;
-    padding-top: 3px; 
-    padding-bottom: 80px;
+    padding-top: 3px;
+    padding-bottom: 60px;
 }
 p,label{
     color: var(--cor12);
+    
+}
+
+input{
+    border-radius: 8px;
+    height: 30px;
+    border: none;
 }
 
 form{
     display: flex;
     flex-direction:column ;
+    justify-content: center;
+    padding-left: 200px;
     width: 40%;
-    gap: 1px;
-    padding-left: 150px;
+    gap: 5px;
+    
 }
 #botao{
     padding: 15px 20px;
@@ -92,7 +102,31 @@ form{
    
 }
 
+#conta-acesso{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top: 100px;
+}
 
+a{
+    text-decoration: none;
+}
+#acessar{
+    color: var(--amarelo-queimado);
+    font-size: medium;
+    font-family: 'Inter', sans-serif;;
+    /* -webkit-text-stroke-width :0.5px;
+    -webkit-text-stroke-color: var(--cor1); */
+}
+
+#conta{
+    color: var(--cor12);
+    font-size: medium;
+    font-family:'Inter', sans-serif;;
+    /* -webkit-text-stroke-width :0.5px;
+    -webkit-text-stroke-color: var(--cor1); */
+}
 img{
     height: 100vh;
     width: 900px;
