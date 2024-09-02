@@ -113,11 +113,16 @@ a{
     text-decoration: none;
 }
 #acessar{
-    color: var(--amarelo-queimado);
+    color:var(--cor12);
     font-size: medium;
     font-family: 'Inter', sans-serif;;
     /* -webkit-text-stroke-width :0.5px;
     -webkit-text-stroke-color: var(--cor1); */
+}
+
+#acessar:hover{
+    color: var(--amarelo-queimado);
+
 }
 
 #conta{
@@ -126,6 +131,10 @@ a{
     font-family:'Inter', sans-serif;;
     /* -webkit-text-stroke-width :0.5px;
     -webkit-text-stroke-color: var(--cor1); */
+}
+
+#conta:hover{
+    color: var(--amarelo-queimado);
 }
 img{
     height: 100vh;

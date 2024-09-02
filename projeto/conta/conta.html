@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src=""></script>
-    <link rel="stylesheet" href="style-menu.css">
+    <link rel="stylesheet" href="style-conta.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,30 @@
                 <strong><p>Criando sua conta</p></strong>
                 <br>
                 <form>
-                    <strong><label for="username">Nome de usuário ou email:</label></strong>
-                    <input type="text" id="username" name="username"><br>
-                    <strong><label for="password">Senha:</label><br></strong>
-                    <input type="password" id="password" name="password">
-                    <button id="botao" type="submit">Criar Conta</button>
+                    <div class="form-group">
+                        <strong><label for="username">Nome:</label></strong>
+                        <input type="text" id="username" name="username"><br>
+                    </div>
+                    <div class="form-group">
+                        <strong><label for="username">Sobrenome:</label></strong>
+                        <input type="text" id="username" name="username"><br>
+                    </div>
+                    <div class="form-group">
+                        <strong><label for="text">Username:</label><br></strong>
+                        <input type="text" id="nome-user" name="password">
+                    </div>
+                    <div class="form-group">
+                        <strong><label for="password">Email:</label><br></strong>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <strong><label for="password">Data nascimento:</label><br></strong>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </div>
+                    <div class="botao">
+                        <button id="botao" type="submit">Criar Conta</button>
+                        <br>
+                    </div>
                 </form>
                 <div id="conta-acesso">
                     <p><strong><a id="conta" href="">Criar Conta</a></strong></p>

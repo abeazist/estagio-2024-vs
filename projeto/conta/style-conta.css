@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root {
+    --cor1: #1E1E1E;
+    --cor2: #000000;
+    --cor3: #FBFFFD;
+    --cor4: #FFFFFF;
+    --cor5: #049368;
+    --cor6: #2241CC;
+    --cor7: #252A36;
+    --cor8: #DAD5D5;
+    --cor9: #10A974;
+    --cor10: #07263E;
+    --cor11: #32A9FF;
+    --cor12: #EFEFEF;
+    --cor13: #021471;
+    --amarelo-queimado: #C1B755;
+}
+
+body{
+    background-color: var(--cor10);
+    font-family: 'Inter', sans-serif;
+    /* padding: 50px 50px 0 50px; */
+
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 95px;
+    color:var(--cor12);
+    font-size: xx-large;
+    -webkit-text-stroke-width :1px;
+    -webkit-text-stroke-color: var(--cor6);
+}
+p{
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 50px;
+}
+p,label{
+    color: var(--cor12);
+    
+}
+
+input{
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-left: 150px;
+}
+
+.form-group label {
+    min-width: 100px; /* Defina uma largura mínima para os labels */
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex: 1; /* O input ocupa o espaço restante */
+    padding: 5px;
+}
+
+.form-group {
+    width: 50%; /* Para os elementos ocuparem toda a largura disponível */
+}
+
+#botao{
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #10A974;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+   
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr; /* Duas colunas de tamanho igual */
+    grid-template-areas: "esquerda direita"; /* Define as áreas do layout */
+    height: 100vh;
+    background-color: var(--cor10);
+    overflow: hidden; /* Faz o container ocupar toda a altura da tela */
+}
+
+.esquerda {
+    grid-area: esquerda; /* Área da esquerda */ /* Você pode mudar a cor de fundo para testar */
+    padding: 20px;
+    text-align: start;
+    align-items: center;
+    gap: 2px;
+    padding: 3px 3px 3px 3px;
+}
+
+
+.direita {
+    grid-area: direita; /* Área da direita */
+     /* Você pode mudar a cor de fundo para testar */
+   
+}
+
+#conta-acesso{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+#acessar{
+    color:var(--cor12);
+    font-size: medium;
+    font-family: 'Inter', sans-serif;;
+    /* -webkit-text-stroke-width :0.5px;
+    -webkit-text-stroke-color: var(--cor1); */
+}
+
+#acessar:hover{
+    color: var(--amarelo-queimado);
+
+}
+
+#conta{
+    color: var(--cor12);
+    font-size: medium;
+    font-family:'Inter', sans-serif;;
+    /* -webkit-text-stroke-width :0.5px;
+    -webkit-text-stroke-color: var(--cor1); */
+}
+
+#conta:hover{
+    color: var(--amarelo-queimado);
+}
+img{
+    height: 100vh;
+    width: 900px;
+    
+}
