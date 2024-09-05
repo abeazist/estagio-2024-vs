@@ -98,12 +98,14 @@ input{
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 0.25fr; /* Duas colunas de tamanho igual */
-    grid-template-areas: "esquerda direita"; /* Define as áreas do layout */
+    grid-template-columns: 1fr 1fr; /* Igualar o tamanho das colunas */
+    grid-template-areas: "esquerda direita";
     height: 100vh;
     background-color: var(--cor10);
-    overflow: hidden; /* Faz o container ocupar toda a altura da tela */
+    overflow: hidden;
 }
+
+
 
 .esquerda {
     grid-area: esquerda; /* Área da esquerda */ /* Você pode mudar a cor de fundo para testar */
@@ -120,6 +122,14 @@ input{
      /* Você pode mudar a cor de fundo para testar */
    
 }
+
+.direita h1 {
+    color: var(--cor9); /* Mude a cor ou outros estilos */
+    text-align: center;
+    padding-top: 50px; /* Ajuste o espaçamento conforme necessário */
+    font-size: xx-large;
+}
+
 
 #conta-acesso{
     display: flex;
@@ -155,8 +165,16 @@ a{
 #conta:hover{
     color: var(--amarelo-queimado);
 }
-img{
+/* img{
     height: 100vh;
     width: 900px;
     
+    
+} */
+
+img {
+    height: auto;
+    max-width: 100%; /* Adapte a imagem para não ultrapassar o espaço */
+    display: block;
+    margin: 0 auto; /* Centralizar a imagem */
 }
