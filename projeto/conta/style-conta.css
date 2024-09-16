@@ -173,8 +173,8 @@ a{
 } */
 
 img {
-    height: auto;
-    max-width: 100%; /* Adapte a imagem para não ultrapassar o espaço */
+    height: 100vh;
+    max-width: 55vw; 
     display: block;
     margin: 0 auto; /* Centralizar a imagem */
 }

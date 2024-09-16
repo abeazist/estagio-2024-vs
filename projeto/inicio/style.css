@@ -90,7 +90,7 @@ section {
 }
 
 #textinho-introducao {
-    color: var(--cor13);
+    color: var(--cor12);
     font-size: 1.15em;
     line-height: 1.5em;
     font-family:"Atkinson Hyperlegible", sans-serif;
@@ -109,7 +109,7 @@ section {
 }
 
 .fundo {
-    background-image: url(/img/6893473.jpg);
+    background-image: url(/img/6081254.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
