@@ -1,5 +1,5 @@
 var swiper = new swiper(".mySwiper", {
-    direction:'horizontal',
+    // direction:'horizontal',
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
