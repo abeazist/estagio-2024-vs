@@ -59,6 +59,7 @@ h2,h3{
     width: 100%;
     padding: 20px;
     user-select: none;
+    
 }
 
 .pessoa-1::after{
@@ -114,21 +115,19 @@ h2,h3{
     color: var(--cor5);
 }
 
-.swiper-slide{
-    flex-direction: row;
-    width: 300px !important ;
-    opacity: 0.2;
-    margin: 50px 0px;
-    margin-top: 0px;
-    justify-content: center;
-}
-
 .swiper{
     max-width:745px;
     width: 100px;
     padding-bottom: 50px;
 }
 
+.swiper-slide{
+    width: 300px !important ;
+    opacity: 0.2;
+    margin: 50px 0px;
+    margin-top: 0px;
+    justify-content: center;
+}
 .swiper-slide-active{
     opacity: 1;
     border: 10px solid #2cf4ae  ;
