@@ -83,7 +83,7 @@ section {
 
 .titulo {
     font-size: 3em;
-    color: black;
+    /* color: black; */
     margin-bottom: 20px;
     -webkit-text-stroke-width :1px;
     -webkit-text-stroke-color: var(--cor12);
@@ -136,7 +136,7 @@ section {
 
 h1{
     font-size: 3em;
-    color: black;
+    /* color: black; */
     margin-bottom: 20px;
     -webkit-text-stroke-width :1px;
     -webkit-text-stroke-color: var(--cor12);
