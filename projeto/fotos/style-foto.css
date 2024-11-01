@@ -1,0 +1,21 @@
+:root {
+    --cor1: #1E1E1E;
+    --cor2: #000000;
+    --cor3: #FBFFFD;
+    --cor4: #FFFFFF;
+    --cor5: #049368;
+    --cor6: #2241CC;
+    --cor7: #252A36;
+    --cor8: #DAD5D5;
+    --cor9: #10A974;
+    --cor10: #07263E;
+    --cor11: #32A9FF;
+    --cor12: #EFEFEF;
+    --cor13: #021471;
+}
+
+area{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
