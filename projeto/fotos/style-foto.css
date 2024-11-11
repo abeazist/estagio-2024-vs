@@ -14,8 +14,31 @@
     --cor13: #021471;
 }
 
+
+
+.syne {
+  font-family: "Syne", serif;
+  font-optical-sizing: auto;
+  
+}
+
 area{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-between;
+    
+}
+
+.topico{
+    
+}
+span{
+    background-color: var(--cor5);
+    color: var(--cor3);
+    font-family: "Syne", serif;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: medium;
+
 }
