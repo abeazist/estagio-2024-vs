@@ -26,19 +26,26 @@ area{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:center;
+    gap: 20px;
     
 }
 
 .topico{
-    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
 }
-span{
+
+p{
     background-color: var(--cor5);
     color: var(--cor3);
     font-family: "Syne", serif;
     border-radius: 15px;
     padding: 5px;
     font-size: medium;
+    width: 200px;
+    
 
 }
