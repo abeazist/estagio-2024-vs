@@ -1,8 +1,11 @@
+/* Resete básico */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilos Gerais */
 :root {
     --cor1: #1E1E1E;
     --cor2: #000000;
@@ -22,9 +25,10 @@
 /* HEADER */
 header {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 15px;
+    padding: 10px 15px;
     background-color: var(--cor10);
     color: var(--cor4);
     font-family: "Atkinson Hyperlegible", sans-serif;
@@ -35,11 +39,21 @@ header {
     font-size: 25px;
     font-weight: bold;
     margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
-.menu li {
-    display: inline-block;
-    padding: 0px 20px;
+.menu {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 5px;
 }
 
 .menu li a {
@@ -53,14 +67,12 @@ header {
 }
 
 .buttonheader {
-    padding: 10px 35px;
+    padding: 10px 20px;
     background-color: var(--cor9);
     color: var(--cor3);
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
     cursor: pointer;
-    margin-left: 15px;
-    margin-right: 15px;
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
@@ -68,11 +80,21 @@ header {
     background-color: var(--cor5);
 }
 
+/* BACKGROUND */
+.fundo {
+    background-image: url(/img/6081254.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
 /* SECTION */
 section {
     position: relative;
     text-align: center;
-    padding-top: 180px;
+    padding: 100px 15px 50px;
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
@@ -84,14 +106,14 @@ section {
 
 #textinho-introducao {
     color: var(--cor12);
-    font-size: 1.15em;
+    font-size: 1.2em;
     line-height: 1.5em;
-    font-family: "Atkinson Hyperlegible", sans-serif;
-    -webkit-text-stroke-color: var(--cor12);
+    margin-bottom: 20px;
 }
 
+/* BUTTONS */
 #vermais {
-    padding: 20px 100px;
+    padding: 15px 50px;
     background-color: var(--cor6);
     color: var(--cor3);
     border: none;
@@ -100,54 +122,40 @@ section {
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
-#vermais:hover{
-    background-color:#2e4dda ;
+#vermais:hover {
+    background-color: #2e4dda;
 }
 
-/* BACKGROUND */
-.fundo {
-    background-image: url(/img/6081254.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
-/* BUTTONS */
-.button-conhecer {
-    background-color: var(--cor6);
-    color: var(--cor4);
-    padding: 20px 80px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.button-conhecer:hover {
-    background-color: var(--cor5);
-}
-
-/* TEXT */
-h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--cor12);
-}
-
-/* MEDIA QUERIES */
 @media (max-width: 800px) {
-    .menu li a,
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+
+    .menu li a {
+        font-size: 14px;
+    }
+
     .buttonheader {
-        font-size: 12px;
+        font-size: 14px;
+        padding: 8px 15px;
     }
 
     .logotipo {
-        font-size: 18px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    section {
+        padding-top: 60px;
     }
 
     .titulo {
@@ -156,5 +164,24 @@ h1 {
 
     #textinho-introducao {
         font-size: 1em;
+    }
+
+    #vermais {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    #textinho-introducao {
+        font-size: 0.9em;
+    }
+
+    #vermais {
+        padding: 8px 20px;
+        font-size: 0.9em;
     }
 }
