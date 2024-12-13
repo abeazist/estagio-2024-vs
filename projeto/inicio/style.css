@@ -127,6 +127,243 @@ section {
     background-color: #2e4dda;
 }
 
+#projetos{
+    background-color:#07263E; 
+    
+}
+.titulo-projeto{
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    
+}
+
+.img-projeto{
+    width: 200px;
+    border-radius: 100%;
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1);
+}
+
+
+.imagens-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.imagens-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.img-projeto:hover{
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.3);
+}
+
+
+/* EQUIPE */
+
+
+body{
+    background-color: var(--cor2); 
+    /* arrumar a imagem, quero q o fundo fique verde mas pra isso, a img precisa ser recortada */
+}
+
+h3{
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+h2,h3{
+    justify-content: center;
+    align-items: center;
+}
+#equipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh ;
+}
+
+.equipe-pai h2{
+    color:var(--cor4);
+    font-size: 3rem;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.equipe-box{
+    width: 100%;
+    padding: 20px;
+    user-select: none;
+    
+}
+
+.pessoa-1::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+}
+
+.pessoa-1{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    filter: grayscale(1);
+}
+
+.pessoa-1-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pessoa-1-texto strong{
+    color: var(--cor12);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.pessoa-1-texto span{
+    color:#919191;
+    font-size:0.9rem;
+}
+
+.links-pessoa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.links-pessoa a{
+    margin: 0px 10px;;
+    color: var(--cor4);
+    font: 0.9rem;
+    transition: all ease 0.3s;
+}
+
+.links-pessoa a:hover{
+    color: var(--cor5);
+}
+
+.swiper{
+    max-width:745px;
+    width: 100px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide{
+    width: 300px !important ;
+    opacity: 0.2;
+    margin: 50px 0px;
+    margin-top: 0px;
+    justify-content: center;
+}
+.swiper-slide-active{
+    opacity: 1;
+    border: 10px solid #2cf4ae  ;
+}
+
+.img-equipe{
+
+}
+
+
+/*  FOTOS */
+
+.secao-fotos{
+    background-color: #07263E;
+}
+
+.syne {
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+}
+
+.area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+    flex-wrap: wrap; /* Garante que os itens "quebrem linha" se necessário */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 30px; /* Espaçamento entre os itens */
+}
+
+.h1-fotos{
+    padding-top: 30px;
+    color: var(--cor3);
+    font-size: 4rem; /* Para um título ainda maior */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Syne", serif;
+}
+
+.topico {
+    display: flex;
+    flex-direction: column; /* Coloca o conteúdo interno (imagem e texto) em coluna */
+    align-items: center; /* Centraliza o conteúdo dentro de cada .topico */
+    text-align: center; /* Centraliza o texto */
+}
+
+.p-fotos {
+    background-color: var(--cor5);
+    color: var(--cor3);
+    font-family: "Syne", serif;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: medium;
+    width: 200px;
+    text-align: center;
+}
+
+
+img{
+    transition: transform 0.5s;
+    transform: translateX(0) scale(0.9);
+}
+
+img:hover{
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.0);
+}
+
+/* FOOTER */
+
+.info-desenvolvedor{
+    background-color: #181e2d;
+    height: 130px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+
+    
+}
+
+.img-github{
+    padding-top: 8px;
+    padding-left: 10px;
+    width: 28%;
+}
 
 
 @media (max-width: 800px) {
