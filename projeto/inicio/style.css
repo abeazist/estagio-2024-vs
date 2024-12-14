@@ -22,6 +22,17 @@
     --cor13: #021471;
 }
 
+/* FONTES */
+
+
+
+.source-sans-3{
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -336,34 +347,50 @@ h2,h3{
     text-align: center;
 }
 
+.imgfooter{
+    width: 70px; 
+    height: 60px;
+  }
 
-img{
+.img-equipe{
     transition: transform 0.5s;
     transform: translateX(0) scale(0.9);
 }
 
-img:hover{
+.img-equipe:hover{
     transition: transform 0.5s;
     transform: translateX(0) scale(1.0);
 }
 
 /* FOOTER */
 
-.info-desenvolvedor{
-    background-color: #181e2d;
-    height: 130px;
+.footer {
     display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 40px 20px;
+    height: 120px;
+    background-color: #252A36; 
     color: white;
-    justify-content: space-between;
-
+    font-family: 'Source Sans 3';
     
-}
-
-.img-github{
-    padding-top: 8px;
-    padding-left: 10px;
-    width: 28%;
-}
+  }
+  
+ 
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+ 
+  .footer-right {
+    display: flex;
+    gap: 15px; 
+  }
+  
+  /* Estilo dos ícones */
+  
 
 
 @media (max-width: 800px) {
@@ -413,6 +440,7 @@ img:hover{
 
     #vermais {
         padding: 10px 30px;
+        padding-top: 20px;
     }
 }
 
