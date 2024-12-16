@@ -293,15 +293,23 @@ h2,h3{
     border: 10px solid #2cf4ae  ;
 }
 
-.img-equipe{
+/* .img-equipe{
 
-}
+} */
 
 
 /*  FOTOS */
 
+
+
 .secao-fotos{
-    background-color: #07263E;
+    /* background-color: #07263E; */
+    background-image: url(/img/fotos/img-fundo-fotos.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
 .syne {
