@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
-    background-color: var(--cor10);
+    background-color: #07263E;
     color: var(--cor4);
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
