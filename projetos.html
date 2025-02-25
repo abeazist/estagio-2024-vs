@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto.css">
+    <title>Projetos</title>
+    <style>
+        :root {
+            --cor1: #1E1E1E;
+            --preto: #000000;
+            --branco: #FBFFFD;
+            --cor4: #FFFFFF;
+            --verdeAgua: #049368;
+            --azulClaro: #2241CC;
+            --cinza: #252A36;
+            --cinzaClaro: #DAD5D5;
+            --cor9: #10A974;
+            --azulEscuro: #07263E;
+            --cor11: #32A9FF;
+            --cor12: #EFEFEF;
+            --azul: #021471;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor12);
+            color: var(--preto);
+            text-align: center;
+        }
+
+        header {
+            background-color: var(--azulEscuro);
+            color: var(--branco);
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .caixa {
+            background-color: var(--cinzaClaro);
+            padding: 15px;
+            margin: 10px auto;
+            width: 60%;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px var(--cinza);
+            transition: background-color 0.3s;
+        }
+
+        .caixa:hover {
+            background-color: var(--cor9);
+            color: var(--branco);
+        }
+
+        .conteudo {
+            display: none;
+            background-color: var(--cor4);
+            padding: 10px;
+            text-align: start;
+            margin: 5px auto;
+            width: 55%;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px var(--cinza);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="cebecalho"> PROJETOS </span>
+    </header>
+    <br>
+    
+    <div class="caixa" onclick="toggleConteudo('desenvolvimento')">Projetos em Desenvolvimento</div>
+    <div id="desenvolvimento" class="conteudo">
+        <p>Duração: 2019 - Atual<br>Título: ESTUDO VISANDO A PRODUÇÃO DE BIOSSENSOR COM POTENCIALIDADE DE APLICAÇÃO PARA DIAGNÓSTICO DE DOENÇAS<br>Situação: Em andamento; Natureza: Desenvolvimento.<br>Integrantes: Rafaelle Bonzanini - Coordenador / Adriano Lopes Romero - Integrante / SCANDELAI, G. A. B. - Integrante / Maria Vitoria De Oliveira Rodrigues - Integrante / David Lucas Z. Marcondes - Integrante.</p>
+        <br>
+        <p>Duração: 2018 - Atual<br>Título: PRODUÇÃO DE BIOSSENSOR PARA DETECÇÃO DE DOENÇA DE ALZHEIMER<br>Situação: Em andamento; Natureza: Desenvolvimento.<br>Alunos envolvidos: Graduação: (2).<br>Integrantes: Rafaelle Bonzanini - Coordenador / Adriano Lopes Romero - Integrante.</p>
+        <br>
+        <p>Duração: 2017 - Atual<br>Título: ESTUDO VISANDO A OBTENÇÃO DE SENSORES BASEADOS EM FILMES POLIMÉRICOS ULTRAFINOS PARA DETECÇÃO DE TOXINAS EM CASTANHA-DO-BRASIL<br>Situação: Em andamento; Natureza: Desenvolvimento.<br>Alunos envolvidos: Graduação: (1) / Mestrado acadêmico: (1).<br>Integrantes: Rafaelle Bonzanini - Coordenador / Adriano Lopes Romero - Integrante / Bruno C. Santos - Integrante / Tayna Carvalho Bitencourt de Souza - Integrante.</p>
+    </div>
+    
+    <div class="caixa" onclick="toggleConteudo('tcc')">Trabalhos de Conclusão de Curso de Graduação</div>
+    <div id="tcc" class="conteudo">
+        <p>
+            Maria Vitoria de Oliveira Rodrigues. ESTUDO DA POTENCIALIDADE FARMACÊUTICA DE ÁCIDOS CINÂMICOS E DE CINAMATOS DE ZINCO. 2022. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.
+        </p>
+        <br>
+        <p>ISAAC FELIPE MACHADO. ESTUDOS DE ADSORÇÃO DE HORMÔNIO 17β-ESTRADIOL EM BIOSSORVENTES ORIUNDOS DE RESÍDUOS INDUSTRIAIS. 2022. Trabalho de Conclusão de Curso. (Graduação em Engenharia Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.
+        </p><br>
+
+        <p>EVELYN KRUGER. MICROESFERAS DO BIOSSORVENTE QUITOSANA: OBTENÇÃO E APLICABILIDADE NA REMOÇÃO DE 17-β-ESTRADIOL EM MEIO AQUOSO. 2022. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>Guilherme Augusto Basconi Scandelai. AVALIAÇÃO IN VITRO E IN SILICO DAS ATIVIDADES INIBIDORAS DE UREASE E DE ACETILCOLINESTERASE DE CHÁS COMERCIALIZADOS EM SACHÊS. 2021. Trabalho de Conclusão de Curso. (Graduação em Engenharia de Alimentos) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>MIRELE COSTA NEVES. Obtenção e caracterização de micro e nanopartículas de acetato de celulose para sistemas de liberação controlada de fármaco. 2019. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>Tayna Carvalho Bitencourt de Souza. PRODUÇÃO DE BIOSSENSOR PARA DETECÇÃO DE DOENÇA DE ALZHEIMER. 2019. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p>
+
+        <p>FERNANDA RECHOTNEK. ESTUDO VISANDO A OBTENÇÃO DE SENSORES BASEADOS EM FILMES POLIMÉRICOS ULTRAFINOS PARA DETECÇÃO DE TOXINAS EM CASTANHA-DO-BRASIL. 2017. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>ROBERTA CRISTINA VELOSO POSSEBON. ESTUDO VISANDO À OBTENÇÃO DE NANOPARTÍCULAS E MEMBRANAS DE QUITOSANA COM LIBERAÇÃO CONTROLADA DE FÁRMACOS EM TERAPIAS DE LESÕES DA PELE. 2016. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>Leandro de Oliveira Silva. Obtenção e Caracterização de membranas à base de acetato de celulose com morfologia controlada com potencial aplicação como carreadores de fármaco.. 2016. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>Lidia Damasceno Ribeiro. Desenvolvimento de sistemas para liberação transdérmica de substâncias bioativas. 2015. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>LETÍCIA CAROLINE DUBINSKI DE FARIAS. ESTUDO VISANDO A SÍNTESE DE NOVOS PLÁSTICOS BIODEGRADÁVEIS COM PROPRIEDADE ANTIMICROBIANA. 2015. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>Julia de Oliveira Primo. ESTUDO VISANDO À OBTENÇÃO DE NANOPARTÍCULAS E GÉIS DE QUITOSANA PARA LIBERAÇÃO CONTROLADA DE SUBSTÂNCIAS BIOATIVAS. 2015. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+        <p>Karin Adriely Aguiar Brugue. ESTUDO DA LIBERAÇÃO CONTROLADA DE DERIVADOS DE ÁCIDO CINÂMICO UTILIZANDO SISTEMAS BASEADOS EM POLÍMEROS BIODEGRADÁVEIS/BIOCOMPATÍVEIS. 2015. Trabalho de Conclusão de Curso. (Graduação em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+
+    </div>
+    
+    <div class="caixa" onclick="toggleConteudo('iniciacao')">Iniciação Científica</div>
+    <div id="iniciacao" class="conteudo">
+        <p>Alex Junior Barbosa de Farias. Síntese de ( )-acetato de diidrogalangal. 2011. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Beatriz Oliveira Santos. Filmes transdérmicos incorporados com derivados do ácido cinâmico: Estudo in silico e in vitro.. Início: 2023. Iniciação científica (Graduando em Curso Técnico de Nível Médio Integrado em Informática Para a Internet) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Orientador).</p><br>
+        <p>Bruno Pereira Gabriel. PROPRIEDADES FARMACOCINÉTICAS, FARMACOLOGIA IN SILICO E SÍNTESE DE CAFEATOS FENÓLICOS. Voluntário PIVIC 2019/2020. 2019. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>David Lucas Zegolan Marcondes. Explorando o uso de acetilcolinesterase isolada de Gromphadorhina portentosa para obtenção de biossensor e triagem de substâncias bioativas potenciais para Doença de Alzheimer. PIBIT Bolsista 2019/2020 CNPq. 2019. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>David Lucas Zegolan Marcondes. SÍNTESE, ESTUDO EM SÍLICO DE HÍBRIDOS DE ÁCIDO CINÂMICO E PRODUTOS NATURAIS. 2018. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>David Lucas Zegolan Marcondes. Obtenção e caracterização de sensores baseados em biopolímeros. 2018. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, UTFPR. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>FERNANDA RECHOTNEK (Bolsista). Estudo Visando À Obtenção De Sistemas À Base De Quitosana Para Aplicação Em Lesões Da Pele. 2016. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Giovana Fernanda De Oliveira. Filmes transdérmicos incorporados com derivados do ácido 3,4,5-trimetóxicinâmico: Estudo in silico e in vitro.. Início: 2023.Iniciação científica (Graduando em Curso Técnico de Nível Médio Integrado em Informática para a Internet) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Orientadora).</p><br>
+        <p>GUILHERME AUGUSTO BASCONI SCANDELAI. ALIMENTOS FUNCIONAIS COM POTENCIALIDADE DE INIBIÇÃO DAS ENZIMAS URÉASE E ACETILCOLINESTERASE. PIBIT Bolsista 2019/2020 da Fundação Araucária. 2019. Iniciação Científica.(Graduando em Engenharia de Alimentos) - Universidade Tecnológica Federal do Paraná, Fundação Araucária. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>ISAAC FELIPE MACHADO (Bolsista 30/06/2022 a 14/02/2023). ESTUDO DA POTENCIALIDADE FARMACÊUTICA DE DERIVADOS DE CINAMATOS INIBIDORES DE ENZIMAS DE INTERESSE FARMACOLÓGICO. 2023. Iniciação Científica. (Graduando em Engenharia Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>ISAAC FELIPE MACHADO. LIBERAÇÃO CONTROLADA E DESENVOLVIMENTO DE SISTEMAS CARREADORES DE CAFEATOS FENÓLICOS. Voluntário PIVIC 2019/2020. 2019. Iniciação Científica. (Graduando em Engenharia Química) - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>ISAAC FELIPE MACHADO. Estudo in silico, in vitro e síntese de resultados de cinematos. 2022. Iniciação Científica. (Graduando em Engenharia Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Julia de Oliveira Primo. Desenvolvimento de sistemas liberadores de matéria bioativa baseados em quitosana. 2014. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Julia de Oliveira Primo (Bolsista). Desenvolvimento de Sistemas Baseados em Quitosana para Liberação Controlada de Farmacêuticos. Plano de trabalho vinculado ao projeto inovação: "Desenvolvimento de Sistemas Baseados em Polímeros Biodegradáveis/Bicompatíveis para Liberação Controlada de Substâncias Bioativas". 2014. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Fundação Araucária. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Karin Adriely Aguiar Bruguel. Desenvolvimento de Sistemas Baseados em Acetato de Celulose para Liberação Transdérmica de Fármacos. 2014. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Kamila Augusta Leão De Oliveira, Bolsista CNPq. Desenvolvimento de sistemas liberadores de matéria bioativa baseados em quitosana. 2013. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Leandro de Oliveira Silva, Bolsista. Desenvolvimento de Sistemas Baseados em Amido para Liberação Transdérmica de Fármacos. 2014. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Fundação Araucária. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Leandro de Oliveira Silva. Obtenção e Caracterização de Filmes de Acetato de Celulose Dopados com Fotoprotetores Absorventes de Radiação UVA e UVB. 2013. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Fundação Araucária. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Leandro de Oliveira Silva, Bolsista CNPq. Obtenção e Caracterização de nanopartículas de acetato de celulose para liberação controlada de fármacos. 2013. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Letícia Caroline Dubinski de Farias. Estudo da liberação controlada de substâncias bioativas por sistemas baseados em quitosana. Plano de trabalho vinculado ao projeto inovação:"Desenvolvimento de Sistemas Baseados em Polímeros Biodegradáveis/Bicompatíveis para Liberação Controlada de Substâncias Bioativas". 2014. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Leonara Aparecida de Brito Lopes. Estudo in silico, in vitro e síntese de derivados do ácido cinâmico. 2022. Iniciação Científica - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Maria Fernanda Giugiolli. Estudo in silico, in vitro e síntese dos resultados do ácido 4-metoxicinâmico. 2022. Iniciação Científica - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Maria Vitoria de Oliveira Rodrigues. Síntese, estudo de inibição de urease e de liberação controlada de complexos de Zn-fenilpropanóides. 2019. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Mirele Costa Neves (Bolsista). PREPARAÇÃO, ESTUDO IN SILICO E DESENVOLVIMENTO DE SISTEMAS CARREADORES DE HÍBRIDOS DE ÁCIDO CINÂMICO E PRODUTOS NATURAIS COM POTENCIAL ATIVIDADE ANTIRRETROVIRAL. 2017. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, UTFPR. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Mirele Costa Neves. Estudo da liberação controlada de substâncias bioativas por sistemas baseados em acetato de celulose. 2014. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Mirele Costa Neves. Desenvolvimento de Sistemas Baseados em Acetato de Celulose para Liberação Controlada de Farmacêuticos. 2016. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Fundação Araucária. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Mirele Costa Neves. Preparação e caracterização de nanopartículas de acetato de celulose utilizando o método de evaporação de solvente. 2013. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Mylena Felde Agnolin. Estudo in silico, in vitro e síntese das derivadas do ácido 4-metóxicinâmico. 2022. Iniciação Científica. (Graduando em Engenharia Química) - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Patrik Yuichi Aoyague. Estudo in silico, in vitro e síntese de derivados do ácido 3,4,5-trimetóxicinâmico.. Início: 2023 - Universidade Tecnológica Federal do Paraná, Fundação Araucária. (Orientador).</p><br>
+        <p>Patrik Yuichi Aoyague (Bolsista a partir de 05/09/2023). ESTUDO DA POTENCIALIDADE FARMACÊUTICA DE DERIVADOS DE CINAMATOS INIBIDORES DE ENZIMAS DE INTERESSE FARMACOLÓGICO. 2023. Iniciação Científica. (Graduando em Engenharia Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientador: Rafaelle Bonzanini.</p><br>
+        <p>Stefhanie Mondini Oliveira (Bolsista a partir de 15/02/2023). ESTUDO DA POTENCIALIDADE FARMACÊUTICA DE DERIVADOS DE CINAMATOS INIBIDORES DE ENZIMAS DE INTERESSE FARMACOLÓGICO. 2023. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Sara Maria Nezi. Síntese de 1'S-1'-acetoxidiidrochavicol. 2011. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná. Orientadora: Rafaelle Bonzanini.</p><br>
+        <p>Tayna Carvalho Bitencourt de Souza (Bolsista). Obtenção e Caracterização de sensores baseados em filmes poliméricos ultrafinos. 2017. Iniciação Científica. (Graduando em Licenciatura em Química) - Universidade Tecnológica Federal do Paraná, UTFPR. Orientadora: Rafaelle Bonzanini.</p><br>
+ 
+
+
+    </div>
+
+    <script>
+        function toggleConteudo(id) {
+            var conteudo = document.getElementById(id);
+            if (conteudo.style.display === "none" || conteudo.style.display === "") {
+                conteudo.style.display = "block";
+            } else {
+                conteudo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
